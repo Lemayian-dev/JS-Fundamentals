@@ -1,14 +1,11 @@
 const x = Number(process.argv[2]);
 
 if (isNaN(x)) {
-  console.log("Missing number of occurrences");  // 1st possible console.log
+  console.log("Missing number of occurrences");
 } else {
-  let output = "";
-
-  for (let i = 0; i < x; i++) {
-    output += "C is fun";
-    if (i < x - 1) output += "\n";
+  let i = 0;
+  while (i < Math.abs(x)) {
+    console.log("C is fun");
+    i++;
   }
-
-  console.log(output);  // 2nd possible console.log
 }
