@@ -1,5 +1,6 @@
 const size = Number(process.argv[2]);
 
+// if statement
 if (isNaN(size)) {
   console.log("Missing size");
 } else {
